@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CacheTracker : NSObject
+#import "CacheTrackerProtocol.h"
+#import "ObjectsFactoryProtocol.h"
+
+@interface CacheTracker : NSObject <CacheTrackerProtocol, NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, strong) id<ObjectsFactoryProtocol> objectsFactory;
+@property (nonatomic, weak) id<CacheTrackerDelegate> delegate;
+
++ (instancetype) cacheTracker:(CacheRequest*) request
+                     delegate:(id<CacheTrackerDelegate>) delegate
+               objectsFactory:(id<ObjectsFactoryProtocol>) objectsFactory
+                      context:(NSManagedObjectContext*) context;
 
 @end

@@ -10,4 +10,35 @@
 
 @interface CacheTransaction : NSObject
 
+/**
+ Changed object
+ */
+@property (strong, nonatomic, readonly) id object;
+
+/**
+ Objects indexPath before changed
+ */
+@property (copy, nonatomic, readonly) NSIndexPath *oldIndexPath;
+
+/**
+ Objects indexPath after change
+ */
+@property (copy, nonatomic, readonly) NSIndexPath *updatedIndexPath;
+
+/**
+ Type of changed object
+ */
+@property (copy, nonatomic, readonly) NSString *objectType;
+
+/**
+ Type of change
+ */
+@property (assign, nonatomic, readonly) NSFetchedResultsChangeType changeType;
+
++ (instancetype)transactionWithObject:(id)object
+                         oldIndexPath:(NSIndexPath *)oldIndexPath
+                     updatedIndexPath:(NSIndexPath *)updatedIndexPath
+                           objectType:(NSString *)objectType
+                           changeType:(NSUInteger)changeType;
+
 @end

@@ -6,8 +6,31 @@
 //  Copyright © 2016 Aliksandr Kantsevoi. All rights reserved.
 //
 
-#ifndef CacheTrackerProtocol_h
-#define CacheTrackerProtocol_h
+#import "CacheTransactionBatch.h"
+#import "CacheRequest.h"
+
+@protocol CacheTrackerProtocol <NSObject>
+
+/**
+ Set up cache tracker
+ 
+ @param cacheRequest Запрос, описывающий поведение трекера
+ */
+- (void)setupWithCacheRequest:(CacheRequest *)cacheRequest forContext:(NSManagedObjectContext*) context;
+
+/**
+ Create transaction batch from current cache state
+ 
+ @return CacheTransactionBatch
+ */
+- (CacheTransactionBatch *)obtainTransactionBatchFromCurrentCache;
 
 
-#endif /* CacheTrackerProtocol_h */
+
+@end
+
+@protocol CacheTrackerDelegate <NSObject>
+
+- (void) didProcessTransactionBatch:(CacheTransactionBatch *)transactionBatch;
+
+@end

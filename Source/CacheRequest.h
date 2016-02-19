@@ -10,4 +10,8 @@
 
 @interface CacheRequest : NSObject
 
+@property (nonatomic, copy) NSString* entityName;
+@property (nonatomic, copy) NSPredicate* predicate;
+@property (nonatomic, copy) NSArray<NSSortDescriptor *> *sortDescriptors;
+
 @end

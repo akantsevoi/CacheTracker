@@ -6,8 +6,8 @@
 //  Copyright © 2016 Aliksandr Kantsevoi. All rights reserved.
 //
 
-#ifndef ObjectsFactoryProtocol_h
-#define ObjectsFactoryProtocol_h
+@protocol ObjectsFactoryProtocol <NSObject>
 
+- (id) objectFromNSManagedObject:(NSManagedObject*) managedObject;
 
-#endif /* ObjectsFactoryProtocol_h */
+@end
