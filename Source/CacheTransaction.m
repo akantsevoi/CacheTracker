@@ -7,6 +7,7 @@
 //
 
 #import "CacheTransaction.h"
+#import <CoreData/CoreData.h>
 
 @interface CacheTransaction ()
 

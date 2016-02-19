@@ -6,6 +6,8 @@
 //  Copyright © 2016 Aliksandr Kantsevoi. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
+
 @protocol ObjectsFactoryProtocol <NSObject>
 
 - (id) objectFromNSManagedObject:(NSManagedObject*) managedObject;
