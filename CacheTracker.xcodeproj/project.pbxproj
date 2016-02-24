@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A809F1271C77214400C31BEA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A809F1261C77214400C31BEA /* CoreData.framework */; };
+		A84967C91C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A84967C71C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld */; };
+		A84967D41C7E2DCB00C3D366 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D21C7E2DCB00C3D366 /* Record.m */; };
+		A84967D51C7E2DCB00C3D366 /* Record+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */; };
+		A84967D81C7E2E4100C3D366 /* ObjectsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */; };
+		A84967E31C7E31B600C3D366 /* Interactor.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967DF1C7E31B600C3D366 /* Interactor.m */; };
+		A84967E41C7E31B600C3D366 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967E21C7E31B600C3D366 /* ViewController.m */; };
+		A84967EA1C7E328900C3D366 /* Assembly.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967E91C7E328900C3D366 /* Assembly.m */; };
 		A8E497441C75763200492C7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E4973A1C75763200492C7E /* AppDelegate.m */; };
 		A8E497451C75763200492C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E4973B1C75763200492C7E /* Assets.xcassets */; };
 		A8E497461C75763200492C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E4973C1C75763200492C7E /* LaunchScreen.storyboard */; };
 		A8E497471C75763200492C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E4973E1C75763200492C7E /* Main.storyboard */; };
 		A8E497481C75763200492C7E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E497401C75763200492C7E /* Info.plist */; };
 		A8E497491C75763200492C7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E497411C75763200492C7E /* main.m */; };
-		A8E4974A1C75763200492C7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E497431C75763200492C7E /* ViewController.m */; };
 		A8E4974D1C75764500492C7E /* CacheTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E4974C1C75764500492C7E /* CacheTracker.m */; };
 		A8E497511C75769900492C7E /* CacheTransactionBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E497501C75769900492C7E /* CacheTransactionBatch.m */; };
 		A8E497541C7576AF00492C7E /* CacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E497531C7576AF00492C7E /* CacheRequest.m */; };
@@ -23,6 +29,21 @@
 
 /* Begin PBXFileReference section */
 		A809F1261C77214400C31BEA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A84967C81C7E2C5A00C3D366 /* CacheTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacheTracker.xcdatamodel; sourceTree = "<group>"; };
+		A84967D01C7E2DCB00C3D366 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		A84967D11C7E2DCB00C3D366 /* Record+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Record+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A84967D21C7E2DCB00C3D366 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Record+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A84967D61C7E2E4100C3D366 /* ObjectsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectsFactory.h; sourceTree = "<group>"; };
+		A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectsFactory.m; sourceTree = "<group>"; };
+		A84967DE1C7E31B600C3D366 /* Interactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
+		A84967DF1C7E31B600C3D366 /* Interactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interactor.m; sourceTree = "<group>"; };
+		A84967E11C7E31B600C3D366 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A84967E21C7E31B600C3D366 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A84967E51C7E31D200C3D366 /* InteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractorOutput.h; sourceTree = "<group>"; };
+		A84967E61C7E31E100C3D366 /* InteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractorInput.h; sourceTree = "<group>"; };
+		A84967E81C7E328900C3D366 /* Assembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assembly.h; sourceTree = "<group>"; };
+		A84967E91C7E328900C3D366 /* Assembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assembly.m; sourceTree = "<group>"; };
 		A8E4971D1C7575BF00492C7E /* CacheTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E497391C75763200492C7E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8E4973A1C75763200492C7E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,8 +52,6 @@
 		A8E4973F1C75763200492C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8E497401C75763200492C7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8E497411C75763200492C7E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A8E497421C75763200492C7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A8E497431C75763200492C7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A8E4974B1C75764500492C7E /* CacheTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheTracker.h; sourceTree = "<group>"; };
 		A8E4974C1C75764500492C7E /* CacheTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheTracker.m; sourceTree = "<group>"; };
 		A8E4974E1C75768200492C7E /* CacheTrackerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheTrackerProtocol.h; sourceTree = "<group>"; };
@@ -57,6 +76,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A84967C61C7E2C4500C3D366 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A84967D01C7E2DCB00C3D366 /* Record.h */,
+				A84967D21C7E2DCB00C3D366 /* Record.m */,
+				A84967D11C7E2DCB00C3D366 /* Record+CoreDataProperties.h */,
+				A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */,
+				A84967C71C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld */,
+				A84967D61C7E2E4100C3D366 /* ObjectsFactory.h */,
+				A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A84967DC1C7E316D00C3D366 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A84967DD1C7E31B600C3D366 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A84967DE1C7E31B600C3D366 /* Interactor.h */,
+				A84967DF1C7E31B600C3D366 /* Interactor.m */,
+				A84967E51C7E31D200C3D366 /* InteractorOutput.h */,
+				A84967E61C7E31E100C3D366 /* InteractorInput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A84967E01C7E31B600C3D366 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A84967E11C7E31B600C3D366 /* ViewController.h */,
+				A84967E21C7E31B600C3D366 /* ViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A84967E71C7E327B00C3D366 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A84967E81C7E328900C3D366 /* Assembly.h */,
+				A84967E91C7E328900C3D366 /* Assembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		A8E497141C7575BF00492C7E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +164,11 @@
 		A8E497381C75763200492C7E /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A84967E71C7E327B00C3D366 /* Assembly */,
+				A84967DD1C7E31B600C3D366 /* Interactor */,
+				A84967E01C7E31B600C3D366 /* View */,
+				A84967C61C7E2C4500C3D366 /* CoreData */,
+				A84967DC1C7E316D00C3D366 /* Models */,
 				A8E497391C75763200492C7E /* AppDelegate.h */,
 				A8E4973A1C75763200492C7E /* AppDelegate.m */,
 				A8E4973B1C75763200492C7E /* Assets.xcassets */,
@@ -102,8 +176,6 @@
 				A8E4973E1C75763200492C7E /* Main.storyboard */,
 				A8E497401C75763200492C7E /* Info.plist */,
 				A8E497411C75763200492C7E /* main.m */,
-				A8E497421C75763200492C7E /* ViewController.h */,
-				A8E497431C75763200492C7E /* ViewController.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -179,13 +251,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E4974A1C75763200492C7E /* ViewController.m in Sources */,
+				A84967E41C7E31B600C3D366 /* ViewController.m in Sources */,
+				A84967E31C7E31B600C3D366 /* Interactor.m in Sources */,
+				A84967D51C7E2DCB00C3D366 /* Record+CoreDataProperties.m in Sources */,
+				A84967C91C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld in Sources */,
 				A8E497571C7576BF00492C7E /* CacheTransaction.m in Sources */,
 				A8E4974D1C75764500492C7E /* CacheTracker.m in Sources */,
+				A84967D41C7E2DCB00C3D366 /* Record.m in Sources */,
+				A84967EA1C7E328900C3D366 /* Assembly.m in Sources */,
 				A8E497511C75769900492C7E /* CacheTransactionBatch.m in Sources */,
 				A8E497491C75763200492C7E /* main.m in Sources */,
 				A8E497541C7576AF00492C7E /* CacheRequest.m in Sources */,
 				A8E497441C75763200492C7E /* AppDelegate.m in Sources */,
+				A84967D81C7E2E4100C3D366 /* ObjectsFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A84967C71C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A84967C81C7E2C5A00C3D366 /* CacheTracker.xcdatamodel */,
+			);
+			currentVersion = A84967C81C7E2C5A00C3D366 /* CacheTracker.xcdatamodel */;
+			path = CacheTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A8E497151C7575BF00492C7E /* Project object */;
 }
