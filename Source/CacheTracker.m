@@ -75,11 +75,18 @@
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(NSManagedObject *)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
     id plainObject = [self.objectsFactory objectFromNSManagedObject:anObject];
+    
+    NSFetchedResultsChangeType resultType = type;
+    
+    if(resultType == NSFetchedResultsChangeMove && [indexPath isEqual:newIndexPath]) {
+        resultType = NSFetchedResultsChangeUpdate;
+    }
+    
     CacheTransaction *transaction = [CacheTransaction transactionWithObject:plainObject
                                                                oldIndexPath:indexPath
                                                            updatedIndexPath:newIndexPath
                                                                  objectType:self.cacheRequest.entityName
-                                                                 changeType:type];
+                                                                 changeType:resultType];
     [self.transactionBatch addTransaction:transaction];
 }
 
