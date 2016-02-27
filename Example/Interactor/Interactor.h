@@ -10,11 +10,13 @@
 #import "CacheTracker.h"
 #import "InteractorInput.h"
 #import "InteractorOutput.h"
-#import "ObjectsFactory.h"
+#import "RecordFactory.h"
+#import "CDManager.h"
 
 @interface Interactor : NSObject <CacheTrackerDelegate, InteractorInput>
 
 @property (nonatomic, weak) id<InteractorOutput> output;
-@property (nonatomic, strong) ObjectsFactory* objectFactory;
+@property (nonatomic, strong) CDManager* cdManager;
+@property (nonatomic, strong) RecordFactory* objectFactory;
 
 @end

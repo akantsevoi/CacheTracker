@@ -19,7 +19,8 @@
     controller.interactor = interactor;
     
     interactor.output = controller;
-    interactor.objectFactory = [ObjectsFactory new];
+    interactor.objectFactory = [RecordFactory new];
+    interactor.cdManager = [CDManager instance];
 }
 
 @end

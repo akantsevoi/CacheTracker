@@ -6,7 +6,10 @@
 //  Copyright © 2016 Aliksandr Kantsevoi. All rights reserved.
 //
 
+#import "CacheTransactionBatch.h"
+
 @protocol InteractorOutput <NSObject>
 
+- (void) processTransactionBatch:(CacheTransactionBatch*) batch;
 
 @end

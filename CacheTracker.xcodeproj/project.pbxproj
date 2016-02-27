@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9590FE1C7F0D19003D65FF /* CDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9590FD1C7F0D19003D65FF /* CDManager.m */; };
+		0AED74AC1C7F36C900270CBD /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED74AB1C7F36C900270CBD /* RecordModel.m */; };
 		A809F1271C77214400C31BEA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A809F1261C77214400C31BEA /* CoreData.framework */; };
 		A84967C91C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A84967C71C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld */; };
 		A84967D41C7E2DCB00C3D366 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D21C7E2DCB00C3D366 /* Record.m */; };
 		A84967D51C7E2DCB00C3D366 /* Record+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */; };
-		A84967D81C7E2E4100C3D366 /* ObjectsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */; };
+		A84967D81C7E2E4100C3D366 /* RecordFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967D71C7E2E4100C3D366 /* RecordFactory.m */; };
 		A84967E31C7E31B600C3D366 /* Interactor.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967DF1C7E31B600C3D366 /* Interactor.m */; };
 		A84967E41C7E31B600C3D366 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967E21C7E31B600C3D366 /* ViewController.m */; };
 		A84967EA1C7E328900C3D366 /* Assembly.m in Sources */ = {isa = PBXBuildFile; fileRef = A84967E91C7E328900C3D366 /* Assembly.m */; };
@@ -28,14 +30,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9590FC1C7F0D19003D65FF /* CDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDManager.h; sourceTree = "<group>"; };
+		0A9590FD1C7F0D19003D65FF /* CDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDManager.m; sourceTree = "<group>"; };
+		0AED74AA1C7F36C900270CBD /* RecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordModel.h; sourceTree = "<group>"; };
+		0AED74AB1C7F36C900270CBD /* RecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
 		A809F1261C77214400C31BEA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A84967C81C7E2C5A00C3D366 /* CacheTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacheTracker.xcdatamodel; sourceTree = "<group>"; };
 		A84967D01C7E2DCB00C3D366 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
 		A84967D11C7E2DCB00C3D366 /* Record+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Record+CoreDataProperties.h"; sourceTree = "<group>"; };
 		A84967D21C7E2DCB00C3D366 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
 		A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Record+CoreDataProperties.m"; sourceTree = "<group>"; };
-		A84967D61C7E2E4100C3D366 /* ObjectsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectsFactory.h; sourceTree = "<group>"; };
-		A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectsFactory.m; sourceTree = "<group>"; };
+		A84967D61C7E2E4100C3D366 /* RecordFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordFactory.h; sourceTree = "<group>"; };
+		A84967D71C7E2E4100C3D366 /* RecordFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordFactory.m; sourceTree = "<group>"; };
 		A84967DE1C7E31B600C3D366 /* Interactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
 		A84967DF1C7E31B600C3D366 /* Interactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interactor.m; sourceTree = "<group>"; };
 		A84967E11C7E31B600C3D366 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AED74A91C7F36C900270CBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AED74AA1C7F36C900270CBD /* RecordModel.h */,
+				0AED74AB1C7F36C900270CBD /* RecordModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A84967C61C7E2C4500C3D366 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,17 +99,12 @@
 				A84967D11C7E2DCB00C3D366 /* Record+CoreDataProperties.h */,
 				A84967D31C7E2DCB00C3D366 /* Record+CoreDataProperties.m */,
 				A84967C71C7E2C5A00C3D366 /* CacheTracker.xcdatamodeld */,
-				A84967D61C7E2E4100C3D366 /* ObjectsFactory.h */,
-				A84967D71C7E2E4100C3D366 /* ObjectsFactory.m */,
+				A84967D61C7E2E4100C3D366 /* RecordFactory.h */,
+				A84967D71C7E2E4100C3D366 /* RecordFactory.m */,
+				0A9590FC1C7F0D19003D65FF /* CDManager.h */,
+				0A9590FD1C7F0D19003D65FF /* CDManager.m */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		A84967DC1C7E316D00C3D366 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		A84967DD1C7E31B600C3D366 /* Interactor */ = {
@@ -168,7 +178,7 @@
 				A84967DD1C7E31B600C3D366 /* Interactor */,
 				A84967E01C7E31B600C3D366 /* View */,
 				A84967C61C7E2C4500C3D366 /* CoreData */,
-				A84967DC1C7E316D00C3D366 /* Models */,
+				0AED74A91C7F36C900270CBD /* Models */,
 				A8E497391C75763200492C7E /* AppDelegate.h */,
 				A8E4973A1C75763200492C7E /* AppDelegate.m */,
 				A8E4973B1C75763200492C7E /* Assets.xcassets */,
@@ -258,12 +268,14 @@
 				A8E497571C7576BF00492C7E /* CacheTransaction.m in Sources */,
 				A8E4974D1C75764500492C7E /* CacheTracker.m in Sources */,
 				A84967D41C7E2DCB00C3D366 /* Record.m in Sources */,
+				0AED74AC1C7F36C900270CBD /* RecordModel.m in Sources */,
 				A84967EA1C7E328900C3D366 /* Assembly.m in Sources */,
 				A8E497511C75769900492C7E /* CacheTransactionBatch.m in Sources */,
 				A8E497491C75763200492C7E /* main.m in Sources */,
+				0A9590FE1C7F0D19003D65FF /* CDManager.m in Sources */,
 				A8E497541C7576AF00492C7E /* CacheRequest.m in Sources */,
 				A8E497441C75763200492C7E /* AppDelegate.m in Sources */,
-				A84967D81C7E2E4100C3D366 /* ObjectsFactory.m in Sources */,
+				A84967D81C7E2E4100C3D366 /* RecordFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

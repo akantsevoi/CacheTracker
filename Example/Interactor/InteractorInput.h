@@ -8,5 +8,6 @@
 
 @protocol InteractorInput <NSObject>
 
+- (void) startDeliveredData;
 
 @end
